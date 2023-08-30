@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+/* ENCABEZADO */
+h1,
+h2 {
+    font-size: 28px;
+    line-height: 44px;
+    padding: 22px 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 11px 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    padding-bottom: 22px;
+}
+.titulo {
+    font-size: 50px;
+    color: #faf9f9;
+    margin-top: 20px;
+    padding-left: 60px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    float: left;
+}
+
+.logo:hover {
+    transform: scale(1.5);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    column-count: 3; /* Número de columnas */
+    column-gap: 20px; /* Espacio entre columnas */
+}
+
+.service {
+    margin-bottom: 20px;
+    /* background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; */
+    padding: 20px;
+    break-inside: avoid; /* Evitar que se divida un servicio entre columnas */
+}
+
+.service h2 {
+    margin-top: 0;
+}
+
+.service p {
+    line-height: 1.6;
+}
+/* Estilos para el video */
+.video-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+}

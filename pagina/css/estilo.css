@@ -1,0 +1,341 @@
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    background-color: rgb(238, 246, 252);
+    text-align: center;
+    padding: 30px;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(238, 246, 252);
+    padding: 0;
+}
+
+/* .logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: 250px;
+}    
+.logo:hover {
+    transform: scale(1.5);
+}
+.titulo{
+    position: relative;
+    margin-left: 15px;
+    margin-top: 40px;
+
+   
+} */
+.logo {
+    height: 100px;
+    transition: height 0.3s;
+}
+
+.logo:hover {
+    height: 120px;
+}
+
+.titulo {
+    color: gray;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*menu*/
+
+
+.navegador{
+    background-color: rgb(59, 60, 59);
+    padding: 20px;
+}
+.navegador .menu a{
+    text-decoration: none;
+    
+
+}
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.menu li a{
+    position: relative;
+    padding:1px 40px;
+}
+.menu li:hover{
+    background-color: rgb(151, 218, 165);
+}
+
+/*submenu*/
+.submenu{
+    display: none;
+    /*position:relative;*/
+    background-color: rgb(73, 74, 73);
+    position:absolute;
+    list-style: none;
+    z-index: 1;
+}
+
+.menu li:hover .submenu{
+    display:block;
+}
+.submenu li{
+    padding: 5px 10px;
+}
+.submenu li.hover{
+    background-color: rgb(43, 220, 226);
+}
+
+a{
+color: aliceblue;
+font-family: sans-serif;
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+    .menu li:hover .submenu {
+        display: none; /* Ocultar submenús en pantallas pequeñas */
+    }
+}
+
+h2{
+    top: 40px;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold ;
+    color: green;
+}
+.banner_estatico h2,
+.banner_estatico{
+    display: flex;
+    position: relative;
+    width: 40%;
+}
+.banner_estatico{
+    display: flex;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: -450px;
+    padding: 80px;
+    margin-left: 30%;
+    padding: 20px 20px 5 5;
+    background-color: rgb(161, 160, 160);
+    border-radius: 15px;
+    box-shadow: 6px 6px 1px 1px rgb(57, 58, 58);
+    background-image: url("/pagina/img/banner3.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+
+}
+p{
+    font-family: sans-serif;
+    font-size: 20px;
+    color:  black;
+    
+}
+/* .banner_estatico{
+    padding-left: 30%;
+    padding-top: 5%;
+}
+.titulo_baner{
+    height: 50px;
+    
+    
+    
+} */
+
+/* contenido */
+
+/* articulo */
+.contenido{
+    padding-top: 460px;
+    display: table;
+    width: 850px;
+    margin-left: 550px;
+    
+}
+/* renderizar contenedor de estado a columnas */
+.entidad{
+
+padding: 50px 20px 50px 20px;
+
+
+}
+/*se fija el contenido de columnas */
+.articulo{
+    column-count: 2;
+    width: 100%;
+    column-gap: 40px;
+}
+
+.articulo p{
+    text-align: justify;
+}
+
+.contenido h1{
+    text-align: center;
+}
+
+.contenido h2{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contenido .articulo p{
+    margin-bottom: -50px;
+}
+
+.apre{
+    width: 100%;
+    margin-top: 80px;
+}
+li{
+    margin-top: 45px;
+}
+
+/* estilos de comentarios */
+
+.comentario article{
+    display: table;
+    padding: 22px;
+}
+.comentario article a{
+    display: block;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.comentario article div{
+    display: table-cell;
+
+}
+
+.comentario article:nth-child(odd){
+    padding: 23px;
+    background-color: gray;
+    border: 1px solid #faa4a4;
+    border-radius: 20px;
+    
+}
+.comentario h2{
+    font-size: 26px;
+    font-family: sans-serif;
+    padding: 10px 0 10px 0;
+}
+
+
+/* .comentario{
+    margin-top: 30px;
+
+}
+
+.comentario .i,
+.comentario{
+    display: table;
+    position: relative;
+    z-index: 1;
+    width: 40%;
+}
+.comentario{
+    display: flex;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: -450px;
+    padding: 80px;
+    margin-left: 20%;
+} */
+
+
+/* sexccion lateral */
+aside{
+display: table-cell;
+width: 200px;
+
+}
+aside a{
+    color: black;
+    
+}
+aside a{
+    position: relative;
+}
+/* footer */
+footer{
+    display: block;
+     width: 100%; 
+    
+    z-index: 10px;
+    position:absolute;
+    left: 0;
+}
+.pie{
+width: 100%;
+height: 30%;
+padding: auto;
+display: table;
+background: #5f5f5f;
+}
+
+.pie section{
+    position: relative;
+    display: table-cell;
+    padding: 15px;
+    
+
+}
+
+.pie section a{
+color: rgb(65, 64, 64);
+font-size: 15px;
+
+
+
+
+
+}
+
+.pie section a:hover{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.pie section h3{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding-top: 20px;
+    
+    
+}
+/* 
+.pie section p{
+    text-align: left;
+} */
+
+
+
+.pie section li{
+    list-style: none;
+
+}
+.pie section svg{
+    width: 30px;
+    height: 40px;
+    color: #8fc1fa;
+    padding-top: 16px;
+
+
+}
+.pie section svg:hover{
+    color: aliceblue;
+}
