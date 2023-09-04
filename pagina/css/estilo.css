@@ -13,7 +13,7 @@ body {
     padding: 22px 0;
     width: 940px;
     font-family: sans-serif;
-    background: #F0F0F0;
+    background: #DCDCDC;
 }
 
 h1,
@@ -95,7 +95,7 @@ nav {
 }
 
 .menu li a:hover {
-    color: #91e67c;
+    color: #0accef;
     transition: all .3s;
 }
 
@@ -108,9 +108,9 @@ nav {
     visibility: hidden;
     opacity: 0;
     transition: opacity 1.5s;
-    background: linear-gradient(to bottom, rgb(143, 146, 137), #2a2b29);
+    background-color: #000;
     align-content: center;
-    border-radius: 5px;
+    border-radius: 1px;
 }
 
 .submenu li a {
@@ -137,7 +137,7 @@ nav {
     border-radius: 22px;
     font-family: sans-serif;
     background-image: url(../img/banner3.jpg);
-    box-shadow: 3px 3px 7px #0f9b0f ;
+    box-shadow: 4px 4px 9px #151515 ;
 }
 
 .banner_estatico h2,
@@ -152,7 +152,7 @@ nav {
     display: flex;
     padding:  100px 0 0 8px;
     font-weight: normal;
-    color: #0f9b0f;
+    color: #0c0c0c;
     font-size: 50px;
     text-align: center;
     font-family: sans-serif;
@@ -241,8 +241,9 @@ nav {
 
 #comentarios article:nth-child(odd) {
     padding: 21px;
-    background: #E3E3E3;
-    border: 1px solid #d7d7d7;
+    background: #4b4a4a;
+    border: 2px solid #1eb0f4;
+    box-shadow:5px 5px 10px ;
     border-radius: 11px;
 }
 
@@ -336,13 +337,14 @@ aside section {
 aside section a {
     display: block;
     text-decoration: none;
-    color: #000;
+    color: #000000;
     margin: 0 0 0 22px;
     list-style: none;
     padding-bottom: 10px;
 }
 aside section a:hover {
     text-decoration: underline;
+    color: #0accef;
 }
 section img{
     border-radius: 3px;
@@ -390,7 +392,7 @@ footer{
 }
 
 .pie a:hover {
-    color: #FFF;
+    color: #23ddf9;
     text-decoration: none;
 }
 
