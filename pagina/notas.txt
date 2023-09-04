@@ -1,0 +1,9 @@
+link de iconos:
+
+https://fontawesome.com/search?q=what&o=r
+
+fontawesome:
+https://cdnjs.com/libraries/font-awesome
+
+buscar imagenes:
+https://www.pexels.com/es-es/

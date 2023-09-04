@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    overflow: hidden;
+}
+
+.bloque{
+    width: 100vw;
+    padding-top: 50px;
+    flex-shrink: 0;
+    height: 100vh;
+}
+
+header{
+    position: fixed;
+    bottom: 0;
+    padding: 10px 0;
+    width: 100%;
+    background-color: rgb(120, 119, 119);
+    text-align: center;
+
+
+}
+
+head a{
+    display: inline-block;
+    margin: 0 20px;
+    text-decoration: none;
+    color: bisque;
+    padding: 10px;
+    font-size: 24px;
+
+}
+
+header span{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 40px;
+    border: 2px solid rgb(6, 6, 6);
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.icono-menu img{
+    width: 40px;
+    height: 40px;
+}
+
+.selected{
+    color: aquamarine;
+    transition: .3s;
+}
+
+#intro{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro .contenido h1{
+    font-size: 4rem;
+    text-align: center;
+    color: azure;
+    text-shadow: 3px 3px 10px gray;
+    position: relative;
+    animation: 3s aparecer forwards;
+    padding-bottom: 80px;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        top: 50px;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.formulario{
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    background: rgb(120, 119, 119);
+    margin-left: 30%;
+    box-shadow: 3px 3px 10px rgb(16, 16, 16);
+}
+
+.formulario h2{
+    color: azure;
+}
+
+
+.info{
+    padding: 10px;
+    color: azure;
+    width: 20px;
+    text-align: center;
+    
+}
+
+.btn_enviar{
+    background-color: rgb(245, 241, 241);
+    color: rgb(7, 7, 7);
+    font-weight: bold;
+    padding: 5px;
+    width: 90px;
+    border-radius: 10px;
+}
+
+
