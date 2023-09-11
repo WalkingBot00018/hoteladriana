@@ -1,0 +1,102 @@
+Declaración del tipo de documento (DOCTYPE):
+
+<!DOCTYPE html>: Esta declaración define el tipo de documento como HTML5.
+Elemento <html>:
+
+<html lang="en">: Define el inicio del documento HTML y especifica que el idioma utilizado es el inglés.
+Elemento <head>:
+
+Contiene metadatos y enlaces a archivos externos que afectan la apariencia y el comportamiento de la página.
+
+Meta etiquetas:
+
+<meta charset="UTF-8">: Establece la codificación de caracteres como UTF-8.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: Configura la vista en dispositivos móviles.
+Enlaces a hojas de estilo y otros recursos:
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">: Enlace a una hoja de estilo para íconos de Font Awesome.
+<link rel="stylesheet" href="./css/estilosistema.css">: Enlace a un archivo de estilo  llamad estilosistema.css.
+<link rel="icon" href="./img/logo verde.png">: Establece el ícono de la pestaña del navegador.
+Enlaces a Bootstrap CSS y JavaScript:
+
+Se incluyen enlaces a los archivos CSS y JavaScript de Bootstrap para estilos y funcionalidad adicionales.
+Título de la página:
+
+<title>HOTEL</title>: Establece el título de la página en el navegador.
+Elemento <body>:
+
+Contiene el contenido visible de la página.
+Encabezado <header>:
+
+Contiene un menú de navegación que incluye enlaces a diferentes secciones del sitio web.
+Secciones del sitio:
+
+La página está dividida en varias secciones, cada una con un id único.
+Las secciones incluyen: "intro" (inicio de sesión), "servicios", "reservas", "contactenos" y "registro".
+Formularios:
+
+Dentro de las secciones "intro", "contactenos" y "registro", se encuentran formularios HTML que permiten a los usuarios ingresar información o enviar consultas.
+Enlaces y Íconos:
+
+Se utilizan enlaces <a> para vincular a diferentes páginas o secciones del sitio web.
+Se utilizan íconos de Font Awesome junto con etiquetas <i> para representar iconos de ubicación, teléfono, correo y WhatsApp.
+Archivos JavaScript:
+
+Al final del documento, se incluyen varios archivos JavaScript que proporcionan funcionalidad adicional, como validación de formularios y acciones de navegación.
+
+
+este código HTMLse ve  la estructura  de una página web de un hotel, que incluye un menú de navegación, información sobre servicios, reservas, información de contacto y formularios interactivos. Además,  utiliza Bootstrap y Font Awesome para mejorar la apariencia y la funcionalidad del sitio
+
+
+
+
+documentacion css:
+Reset de estilos y configuración básica:
+
+*: Se aplica a todos los elementos HTML y establece márgenes, relleno y la caja de modelo de borde en 0 para restablecer los valores predeterminados del navegador. Además, se establece la fuente predeterminada como "sans-serif".
+Scroll suave:
+
+html: Establece la propiedad scroll-behavior en smooth, lo que permite el desplazamiento suave cuando se hace clic en enlaces internos.
+Estilos generales de la página:
+
+body: Configura el cuerpo de la página para que sea un contenedor flexible con desbordamiento oculto, lo que podría ser útil para ocultar el desplazamiento horizontal.
+.bloque: Define un estilo general para los bloques en la página, estableciendo un ancho del 100% de la ventana gráfica y ajustando el relleno y el encogimiento flex.
+header: Establece un estilo para el encabezado fijo en la parte inferior de la página. Aplica un fondo degradado utilizando la propiedad background con gradientes lineales para una apariencia atractiva.
+Estilos del menú de navegación:
+
+header nav a: Establece estilos para los enlaces dentro del menú de navegación, incluyendo márgenes, color de texto, relleno y bordes redondeados.
+a:hover: Cambia el color del texto cuando se coloca el cursor sobre un enlace.
+Estilos específicos del menú de navegación:
+
+header span: Estiliza un icono en forma de círculo utilizando bordes y un fondo degradado.
+.selected: Establece un color de texto especial para el enlace seleccionado.
+Estilos para la sección "intro":
+
+#intro: Configura el fondo de esta sección con una imagen de fondo y un efecto de texto con sombra y animación al aparecer.
+Estilos para formularios:
+
+.formulario: Establece el estilo general para formularios en la página, incluyendo anchos, bordes redondeados y sombras.
+.formulario h2: Aplica estilos al título de un formulario.
+.formulario h3: Configura estilos para subtítulos en los formularios.
+.info: Define márgenes entre elementos de información en el formulario.
+.info label: Estiliza las etiquetas de los campos de entrada en los formularios.
+.info input: Define el estilo de los campos de entrada de texto y establece un fondo y borde personalizado.
+.formulario .btn_enviar: Estiliza el botón de envío en los formularios.
+Estilos para la sección "servicios":
+
+#servicios: Configura el fondo de esta sección con una imagen y un gradiente.
+Establece estilos para los elementos de servicios dentro de esta sección.
+Estilos para la sección "reservas":
+
+#reservas: Configura el fondo de esta sección con una imagen y un color de fondo semitransparente.
+Define estilos para títulos, párrafos y enlaces en esta sección.
+Estilos para la sección "contactenos":
+
+#contactenos: Establece un color de fondo para esta sección y alinea el contenido en el centro.
+Define estilos para la información de contacto y el formulario de contacto.
+Estilos para la sección "registro":
+#registro: Configura el fondo y el color de esta sección.
+Define estilos específicos para formularios de registro.
+Estilos para campos de entrada validados:
+.inputp:valid: Cambia el borde de los campos de entrada cuando son válidos.
+.inputp:invalid: Cambia el borde de los campos de entrada cuando son inválidos.
