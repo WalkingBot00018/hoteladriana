@@ -1,4 +1,3 @@
-/* Estilos generales */
 body {
     font-family: sans-serif;
     margin: 0;
@@ -8,11 +7,11 @@ body {
 
 .header-contenido {
     background-color: #0078d4;
-    color: rgb(12, 180, 6);
+    color: rgb(47, 187, 243);
     font-weight: bold;
     text-align: center;
     padding: 150px;
-    background-image: url(../img/picina.jpg);
+    background-image: url(../img/fondoroomservice.jpg);
     background-size: cover;
     background-attachment: fixed; 
     
@@ -55,7 +54,7 @@ p {
     padding: 40px;
     margin: 20px;
     border-radius: 10px;
-    box-shadow: 4px 4px 10px rgb(37, 249, 164);
+    box-shadow: 4px 4px 10px #2a717a;
 }
 
 .servicio img {
@@ -83,7 +82,7 @@ p {
 /* estilo menu */
 /* Estilos para el menú */
 nav {
-    background-color: #00d455;
+    background-color: #2a717a;
     text-align: center;
 }
 
@@ -153,3 +152,4 @@ footer {
         font-size: 24px;
     }
 }
+ 

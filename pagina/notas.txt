@@ -10,3 +10,10 @@ https://www.pexels.com/es-es/
 
 colores:
 https://uigradients.com/#Inbox
+
+alertas swal:
+
+https://sweetalert2.github.io/
+
+bootstrap:
+https://getbootstrap.com/
