@@ -26,10 +26,27 @@ header{
     bottom: 0;
     padding: 10px 0;
     width: 100%;
-    background-color: rgb(120, 119, 119);
+    /* background-color: rgb(120, 119, 119); */
+    background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     text-align: center;
 
 
+}
+header nav a {
+    display: inline-block;
+    margin: 0 20px;
+    text-decoration: none;
+    color: bisque;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #090909;
 }
 
 head a{
@@ -62,6 +79,7 @@ header span{
     transition: .3s;
 }
 
+
 #intro{
     background-image: url(../img/fondo.jpg);
     background-size: cover;
@@ -71,7 +89,7 @@ header span{
 }
 
 #intro .contenido h1{
-    font-size: 4rem;
+    font-size: 2rem;
     text-align: center;
     color: azure;
     text-shadow: 3px 3px 10px gray;
@@ -90,37 +108,401 @@ header span{
         top: 0;
     }
 }
+#intro .formulario {
 
-.formulario{
-    width: 30%;
+    width: 60%;
+    height: 60%;
     text-align: center;
     border-radius: 5px;
     padding: 20px;
     background: rgb(120, 119, 119);
     margin-left: 30%;
-    box-shadow: 3px 3px 10px rgb(16, 16, 16);
+    box-shadow: 10px 10px 20px rgb(16, 16, 16);
 }
-
 .formulario h2{
-    color: azure;
+    padding: 18px;
 }
-
-
-.info{
-    padding: 10px;
-    color: azure;
-    width: 20px;
+.formulario h3 {
+    color: #070707;
     text-align: center;
-    
+    padding: 10px;
+    font-size: 30px;
 }
-
-.btn_enviar{
-    background-color: rgb(245, 241, 241);
-    color: rgb(7, 7, 7);
+.formulario .info {
+    margin-bottom: 20px;
+}
+.info label {
+    display: block;
+    color: #0a0a0a;
     font-weight: bold;
+}
+
+.info input {
+    display: block;
+    width: 95%;
+    border: none;
+    border-bottom: 1px solid #4d4343;
     padding: 5px;
-    width: 90px;
+    outline: none;
+    border-radius: 3px;
+    background-color: #bfbebe;
+}
+
+.formulario .btn_enviar {
+    background-color: #108af5;
+    border-radius: 5px;
+    margin-left: 35%;
+    display: block;
+    border: none;
+    color: #090909;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* servicios */
+#servicios {
+     background: linear-gradient(transparent, black), url(../img/fondoservicios.jpg);
+    background-size: cover; 
+    
+
+
+}
+
+#servicios h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#servicios .contenido {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#servicios .servicio1 {
+    background-image: url(../img/picina.jpg);
+}
+
+#servicios .servicio2 {
+    background-image: url(../img/restaurante.jpg);
+}
+
+#servicios  .servicio3 {
+    background-image: url(../img/bar.jpg);
+}
+
+#servicios .servicio4 {
+    background-image: url(../img/spa.jpg);
+}
+
+#servicios  .servicio5 {
+    background-image: url(../img/roomservice.jpg);
+}
+
+/* acordeon */
+#servicios .item {
+    width: 25%; /*el contenedor item pasa de 25% ancho con hover a 90% de ancho*/
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 10px;
+    transition: .7s;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#servicios .item:hover {
+   width: 90%;
+}
+
+#servicios  .overlay {
+   position: absolute;
+   background: linear-gradient(to bottom, transparent 80%, black);
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+#servicios .item .titulo {
+   position: absolute;
+   bottom: -10px;
+   letter-spacing: 2px;
+   left: 50%;
+   transform: translateX(-50%);
+   color: #e7e7dd;
+   font-style: 20px;
+   background-color: black;
+   padding: 10px 0;
+   width: 100%;
+   opacity: 0;
+   transition: .3s;
+}
+
+#servicios .item:hover .titulo {
+   bottom: -20px;
+   opacity: 1;
+}
+
+/* reservas */
+#reservas {
+    background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(6, 6, 6, 0.7)), url('../img/fondoreserva.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(106, 105, 105);
+    padding: 50px 0;
+}
+#reservas .contenido {
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-image: url(../img/reservasfondo.jpg);
+    
+    background-size: cover;
+    background-color: rgba(111, 111, 111, 0.6);
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#reservas h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2f15f8; 
+}
+
+#reservas p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2F4F4F;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#reservas .item {
+    margin-top: 20px;
+}
+
+#reservas .item h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #2f15f8; 
+    margin-bottom: 10px;
+}
+
+#reservas .item a {
+    color: #7ee3f9; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#reservas .item a:hover {
+    color: #ffffff;
+}
+#reservas a {
+    color: #7ee3f9; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#reservas .item:hover {
+    box-shadow: 0 4px 8px rgba(16, 16, 16, 0.2); 
+    transform: translateY(-5px); 
+}
+
+/* contactenos */
+#contactenos {
+    background-color: #090909; 
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contactenos .contenido {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+/* Estilos para la información de contacto */
+#contactenos .datos {
+    flex: 1; 
+    padding: 20px;
+    text-align: left;
+}
+
+#contactenos .datos .item {
+    margin-bottom: 20px;
+}
+
+#contactenos .icono a {
+    font-size: 16px;
+    color: #4efcc5; 
+}
+#contactenos .icono  {
+    font-size: 16px;
+    color: #4efcc5; 
+}
+
+#contactenos .datos h2 {
+    font-size: 24px;
+    color: #f6f2f2;
+    margin-top: 10px;
+}
+
+#contactenos .datos h3 {
+    font-size: 18px;
+    color: #74f8ad; 
+}
+
+/* Estilos para el formulario de contacto */
+#contactenos .formulario {
+    flex: 1; 
+    padding: 15px;
+    width: 0px;
+    height: 130%;
+    text-align: left;
+    
+   
+    background-image: url(../img/formucontac.jpg);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(254, 255, 254); 
+}
+
+#contactenos .formulario h2 {
+    font-size: 24px;
+    color: #080707; /* Cambia el color del título del formulario según tu preferencia */
+    margin-bottom: 20px;
+}
+
+#contactenos .info label {
+    display: block;
+    font-weight: bold;
+    color: #555; /* Cambia el color de la etiqueta según tu preferencia */
+    margin-top: 10px;
+}
+
+#contactenos .info input,
+#contactenos .info textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Establece un borde para los campos de entrada */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 7px;
+}
+
+#contactenos .info input::placeholder,
+#contactenos .info textarea::placeholder {
+    color: #999; /* Cambia el color del texto de marcador de posición según tu preferencia */
+}
+
+#contactenos .info input:focus,
+#contactenos .info textarea:focus {
+    outline: none;
+    border-color: #007bff; /* Cambia el color del borde al enfocar los campos de entrada */
+}
+
+#contactenos .btn_enviar {
+    background-color: #0ba5ff; /* Cambia el color de fondo del botón según tu preferencia */
+    border: none;
+    border-radius: 5px;
+    color: #fff; /* Cambia el color del texto del botón según tu preferencia */
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactenos .btn_enviar:hover {
+    background-color: #4bf5a0; /* Cambia el color de fondo al pasar el mouse por encima */
+}
+#contactenos .inputp:valid {
+    border-color: rgb(35, 248, 3);
+}
+#contactenos .inputp:invalid {
+    border-color: rgb(252, 4, 4);
+}
+
+.formulario {
+    text-align: center;
+}
+.info {
+    margin: 10px 0;
+}
+.error-message {
+    color: red;
+}
+
+/* Estilos para el formulario de registro */
+#registro {
+    text-align: center;
+    padding: 20px;
+    background-color: #4fefdf;
+}
+  
+.formulario {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #444242;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+  
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+  
+.info {
+    margin-bottom: 20px;
+}
+  
+label {
+    display: block;
+    font-weight: bold;
+}
+  
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+  
+  
+
+
+.inputp:valid {
+    border-color: rgb(35, 248, 3);
+}
+.inputp:invalid {
+    border-color: rgb(252, 4, 4);
 }
 
 
+
+  
+  
+.btn_enviar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+  
+.btn_enviar:hover {
+    background-color: #0056b3;
+}
+  
