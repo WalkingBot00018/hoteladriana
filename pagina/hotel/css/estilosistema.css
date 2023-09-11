@@ -202,7 +202,7 @@ header span{
 
 /* acordeon */
 #servicios .item {
-    width: 25%; /*el contenedor item pasa de 25% ancho con hover a 90% de ancho*/
+    width: 25%; 
     height: 400px;
     background-size: cover;
     background-position: center center;
@@ -383,7 +383,7 @@ header span{
 #contactenos .info label {
     display: block;
     font-weight: bold;
-    color: #555; /* Cambia el color de la etiqueta según tu preferencia */
+    color: #555; 
     margin-top: 10px;
 }
 
@@ -391,7 +391,7 @@ header span{
 #contactenos .info textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc; /* Establece un borde para los campos de entrada */
+    border: 1px solid #ccc; /
     border-radius: 5px;
     margin-bottom: 10px;
     font-size: 7px;
@@ -399,20 +399,20 @@ header span{
 
 #contactenos .info input::placeholder,
 #contactenos .info textarea::placeholder {
-    color: #999; /* Cambia el color del texto de marcador de posición según tu preferencia */
+    color: #999; 
 }
 
 #contactenos .info input:focus,
 #contactenos .info textarea:focus {
     outline: none;
-    border-color: #007bff; /* Cambia el color del borde al enfocar los campos de entrada */
+    border-color: #007bff;
 }
 
 #contactenos .btn_enviar {
-    background-color: #0ba5ff; /* Cambia el color de fondo del botón según tu preferencia */
+    background-color: #0ba5ff; 
     border: none;
     border-radius: 5px;
-    color: #fff; /* Cambia el color del texto del botón según tu preferencia */
+    color: #fff; 
     padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;
@@ -421,7 +421,7 @@ header span{
 }
 
 #contactenos .btn_enviar:hover {
-    background-color: #4bf5a0; /* Cambia el color de fondo al pasar el mouse por encima */
+    background-color: #4bf5a0; 
 }
 #contactenos .inputp:valid {
     border-color: rgb(35, 248, 3);
