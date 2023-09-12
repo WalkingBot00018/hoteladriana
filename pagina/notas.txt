@@ -5,13 +5,16 @@ https://fontawesome.com/search?q=what&o=r
 fontawesome:
 https://cdnjs.com/libraries/font-awesome
 
+
+
 buscar imagenes:
 https://www.pexels.com/es-es/
 
 colores:
 https://uigradients.com/#Inbox
 
-alertas swal:
+
+sweetalert2:
 
 https://sweetalert2.github.io/
 

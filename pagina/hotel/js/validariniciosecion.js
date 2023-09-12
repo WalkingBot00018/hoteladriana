@@ -5,10 +5,21 @@ function validarInicioSesionForm() {
     const contrasena = inicioSesionForm.querySelector('input[name="contrasena"]').value;
 
     if (usuario === '' || contrasena === '') {
-        alert('Por favor, complete todos los campos.');
+        // alert('Por favor, complete todos los campos.');
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'complete todos los campos!',
+            footer: '<a href="">Why do I have this issue?</a>'
+          })
     } else {
        
-        alert('muy bien inciio de secion correcto :D.');
+        // alert('muy bien inciio de secion correcto :D.');
+        Swal.fire(
+            'Muy Bien!',
+            'Inicio de Secion exitoso !',
+            'success'
+          )
 
       
         inicioSesionForm.submit();

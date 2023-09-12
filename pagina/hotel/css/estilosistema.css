@@ -1,26 +1,27 @@
+/* Estilos globales */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
+/* Estilo de scroll suave en la página */
 html{
     scroll-behavior: smooth;
 }
-
+/* Estilos del cuerpo de la página */
 body{
     display: flex;
     overflow: hidden;
 }
-
+/* Estilos de los bloques de contenido */
 .bloque{
     width: 100vw;
     padding-top: 50px;
     flex-shrink: 0;
     height: 100vh;
 }
-
+/* Estilos del encabezado (header) */
 header{
     position: fixed;
     bottom: 0;
@@ -35,6 +36,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 
 
 }
+/* Estilos de los enlaces de navegación en el encabezado */
 header nav a {
     display: inline-block;
     margin: 0 20px;
@@ -44,7 +46,7 @@ header nav a {
     border-radius: 10px;
     font-weight: bold;
 }
-
+/* Estilos de los enlaces en hover */
 a:hover{
     color: #090909;
 }
@@ -58,7 +60,7 @@ head a{
     font-size: 24px;
 
 }
-
+/* Estilos para el ícono del menú */
 header span{
     display: inline-block;
     height: 50px;
@@ -73,13 +75,13 @@ header span{
     width: 40px;
     height: 40px;
 }
-
+/* Estilo para el enlace seleccionado */
 .selected{
     color: aquamarine;
     transition: .3s;
 }
 
-
+/* Estilos para la sección de introducción (intro) */
 #intro{
     background-image: url(../img/fondo.jpg);
     background-size: cover;
@@ -108,6 +110,7 @@ header span{
         top: 0;
     }
 }
+/* Estilos para el formulario en la sección de introducción */
 #intro .formulario {
 
     width: 60%;
@@ -128,6 +131,8 @@ header span{
     padding: 10px;
     font-size: 30px;
 }
+
+/* Estilos para los campos del formulario */
 .formulario .info {
     margin-bottom: 20px;
 }
@@ -148,6 +153,7 @@ header span{
     background-color: #bfbebe;
 }
 
+/* Estilos para el botón de enviar en el formulario */
 .formulario .btn_enviar {
     background-color: #108af5;
     border-radius: 5px;
@@ -160,7 +166,7 @@ header span{
     font-weight: bold;
 }
 
-/* servicios */
+/* Estilos para la sección de servicios (servicios) */
 #servicios {
      background: linear-gradient(transparent, black), url(../img/fondoservicios.jpg);
     background-size: cover; 
@@ -173,7 +179,7 @@ header span{
     text-align: center;
     margin-bottom: 20px;
 }
-
+/* Estilos para los elementos de servicios*/
 #servicios .contenido {
     max-width: 90%;
     margin: auto;
@@ -200,7 +206,7 @@ header span{
     background-image: url(../img/roomservice.jpg);
 }
 
-/* acordeon */
+/* Estilos para el acordeón en servicios */
 #servicios .item {
     width: 25%; 
     height: 400px;
@@ -247,7 +253,7 @@ header span{
    opacity: 1;
 }
 
-/* reservas */
+/* Estilos para la sección de reservas (reservas) */
 #reservas {
     background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(6, 6, 6, 0.7)), url('../img/fondoreserva.jpg');
     background-size: cover;
@@ -266,7 +272,7 @@ header span{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
+/* Estilos para los párrafos en la sección de reservas */
 #reservas h2 {
     font-size: 36px;
     text-align: center;
@@ -281,7 +287,7 @@ header span{
     font-weight: bold;
     margin-bottom: 20px;
 }
-
+/* Estilos para los elementos en la sección de reservas */
 #reservas .item {
     margin-top: 20px;
 }
@@ -314,7 +320,7 @@ header span{
     transform: translateY(-5px); 
 }
 
-/* contactenos */
+/* Estilos para la sección de contacto (contactenos) */
 #contactenos {
     background-color: #090909; 
     padding: 50px 0;
@@ -376,10 +382,10 @@ header span{
 
 #contactenos .formulario h2 {
     font-size: 24px;
-    color: #080707; /* Cambia el color del título del formulario según tu preferencia */
+    color: #080707;
     margin-bottom: 20px;
 }
-
+/* Estilos para los campos del formulario de contacto */
 #contactenos .info label {
     display: block;
     font-weight: bold;
@@ -391,7 +397,7 @@ header span{
 #contactenos .info textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc; /
+    border: 1px solid #ccc; 
     border-radius: 5px;
     margin-bottom: 10px;
     font-size: 7px;
@@ -407,7 +413,7 @@ header span{
     outline: none;
     border-color: #007bff;
 }
-
+/* Estilos para el botón de enviar en el formulario de contacto */
 #contactenos .btn_enviar {
     background-color: #0ba5ff; 
     border: none;
@@ -464,12 +470,12 @@ h2 {
 .info {
     margin-bottom: 20px;
 }
-  
+/* Estilos para las etiquetas en el formulario de registro */
 label {
     display: block;
     font-weight: bold;
 }
-  
+/* Estilos para los campos de texto, email y select en el formulario de registro */
 input[type="text"],
 input[type="email"],
 select {
@@ -481,7 +487,7 @@ select {
   
   
 
-
+/* Estilos para el campo de entrada de texto válido en el formulario de registro */
 .inputp:valid {
     border-color: rgb(35, 248, 3);
 }
@@ -492,7 +498,7 @@ select {
 
 
   
-  
+ /* Estilos para el botón de enviar en el formulario de registro */ 
 .btn_enviar {
     background-color: #007bff;
     color: #fff;

@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cargar hoja de estilos de FontAwesome para iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Cargar archivo de estilos -->
     <link rel="stylesheet" href="./css/estilosistema.css">
+    <!-- Agregar icono de la pestaña del navegador -->
     <link rel="icon" href="./img/logo verde.png">
+    <!-- Cargar hoja de estilos de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-7FfsF7xczj9RvF5t7n5z4e5z4k+OGpamoFVy38MVBnE+IbbVY+Xn5j4p+5C5CS56" crossorigin="anonymous">
+     <!-- Cargar script de Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.min.js" integrity="sha384-w02sxFnxEjhXpOoA6Ow5w5o9OYwJN47jPx3kO5KXAZVn6pb/R5Fte2zo/5GjS5" crossorigin="anonymous"></script>
 
     <title>HOTEL</title>
@@ -15,9 +20,11 @@
     <!-- <iframe src="./banner.html" frameborder="0"></iframe> -->
     <header>
         <nav>
+            <!-- Enlaces de navegación -->
             <a href="../index.html" onclick="seleccionar(this)">Blog</a>
             <a href="#intro" onclick="seleccionar(this)" class="selected">Inicio</a>
             <a href="#servicios" onclick="seleccionar(this)">servicios</a>
+            <!-- Icono del menú -->
             <span><i class="icono-menu"><img src="./img/logo verde.png" alt=""></i></span>
             <a href="#reservas" onclick="seleccionar(this)">reservas</a>
             <a href="#contactenos" onclick="seleccionar(this)">contactenos</a>
@@ -25,12 +32,15 @@
         </nav>
     </header>
 
-    <!-- menu footer -->
+    <!-- Sección de inicio -->
     <section id="intro" class="bloque">
         <div class="contenido">
+            <!-- Título principal -->
             <div>
                 <h1>LA MEJOR ESTANCIA DE SU VIAJE </h1>
             </div>
+
+            <!-- Formulario de inicio de sesión -->
             <div class="formulario">
                 <form action="#servicios" id="inicio-sesion-form">
                     <h2>Iniciar Sesión</h2>
@@ -50,15 +60,17 @@
 
     </section>
 
-    <!-- servicos -->
+    <!-- Sección de servicios -->
 
     <section id="servicios" class="bloque">
         <div>
+            <!-- Título de servicios -->
             <h2>NUESTROS SERVICIOS</h2>
         </div>
 
         <div class="contenido">
 
+            <!-- Servicios individuales con enlaces -->
             <div class="item servicio1">
                 
                 <a href="./servicios/picina.html" class="servicio1">
@@ -123,12 +135,14 @@
 
     </section>
 
-<!-- reservas -->
+<!-- Sección de reservas -->
     <section id="reservas" class="bloque">
         <div class="contenido">
             <div><h2>Desea reservar</h2></div>
 
             <div class="contenido">
+
+                <!-- Información sobre las condiciones de reserva -->
                 <p>los presentes condiciones  estan sujetos a lo dispuesto en la NTSH sectorial  colombiana 003  (2003-02-24)
                     <br>
                     <br>
@@ -137,6 +151,7 @@
                     establecimientos de alojamiento y hospedaje. 
                 </p>
 
+                <!-- Enlaces a cláusulas y condiciones de pago -->
                 <div class="item clausula">
                     <div class="overlay"></div>
                     <a href="./reservas/clausulas.html"><h2>clausula</h2></a>
@@ -167,12 +182,12 @@
     </section>
 
 
-    <!-- contactenos -->
+    <!-- seccion contactenos -->
 
     <section id="contactenos" class="bloque">
         <div class="contenido">
             <div class="datos">
-
+                <!-- Información de contacto -->
                 <div class="item">
                     <div class="icono">
                         <i class="fa-solid fa-location-dot"></i>
@@ -226,18 +241,9 @@
 
                 </div>
 
-                
-
-
-                
-
-
-
-
-                
-
             </div>
 
+             <!-- Formulario de contacto -->
             <div class="formulario">
                 <form action="#servicios" id="miFormulario">
                     <h2>info contacto</h2>
@@ -286,11 +292,11 @@
 
     </section>
 
-    <!-- registro -->
+    <!-- seccion registro -->
 
      <section id="registro" class="bloque">
         <div class="formulario">
-            <form action="#servicios">
+            <form action="#servicios" id="form">
                 <h2>registro </h2>
                 <div class="info">
                     <label >Nombre</label>
@@ -351,11 +357,12 @@
     
       
 
-
+<!-- Scripts JavaScript -->
     <script src="./js/sistema.js"></script>
     <script src="./js/validacionregistro.js"></script> 
     <script src="./js/validacioncontac.js"></script> 
     <script src="./js/validariniciosecion.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
     

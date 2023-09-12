@@ -7,10 +7,20 @@ function validarRegistroForm() {
     const condicionesAceptadas = registroForm.querySelector('input[name="condiciones"]').checked;
   
     if (nombre === '' || apellido === '' || correo === '' || tipoDocumento === '' || !condicionesAceptadas) {
-      alert('Por favor, complete todos los campos y acepte las condiciones.');
+      // alert('Por favor, complete todos los campos y acepte las condiciones.');
+      Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: "Por favor, complete todos los campos y acepte las condiciones."
+    });
     } else {
       
-      alert('Muy bien, ya te registraste.');
+      // alert('Muy bien, ya te registraste.');
+      Swal.fire({
+        icon: "success",
+        title: "¡Registro exitoso!",
+        text: "Muy bien, ya te registraste."
+    });
   
       
       registroForm.submit();
